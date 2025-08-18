@@ -1,0 +1,451 @@
+/* ========== Общие стили ========== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121a36;
+    color: white;
+    background-image: url('data:image/jpeg;base64,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');
+    /* Фоновое изображение для всей страницы */
+    background-size: cover;
+    background-position: center;
+}
+
+/* ========== Header ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #0a1020;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #cccccc;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signin {
+    background-color: #2b2f42;
+    color: white;
+}
+
+.download {
+    background-color: #1a9fff;
+    color: white;
+}
+
+/* ========== Topbar ========== */
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #121a36;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.search {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 250px;
+    background-color: #2b3553;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #b0b8d1;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+/* ========== Sidebar Menu ========== */
+.content-container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDw8PDw0NDQ8PDw8NDw0NDQ8NDQ8PFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRkrKysrNzc3NzcrKys3LSsrKzctNy0tLSs3LS0rKzc3KysrLSstKystKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAABAAIDBQQH/8QAGhABAQEBAAMAAAAAAAAAAAAAAAERAhIxQf/EABgBAAMBAQAAAAAAAAAAAAAAAAABAgMF/8QAGhEBAQEBAQEBAAAAAAAAAAAAAAERAhIxIf/aAAwDAQACEQMRAD8A/LWgY6bvQxqCGBpDCiStMbjMjSaVu/iSQkXxDDGTFNcaLJJcjSBC4YgjVpC0AWkVAJqCARVQkCrNSqCKzWa1RQzrFYsdKzSxnY5VmunUYpMbGKGqyTOvpMDUVq+aYYCNaaSCFQlkjFyEsk2saQhC4YQgposkGUNQVpQ1AtVCQK1BAJqGqgJtSCNIBATRWa0zSRWa52OlZ6hMuo51luskxrvGoxKdIpW0zp0LlaLJ09aytIaNPV+mizpPVytGMaRq5W4mdMoVK1pZ0hWlaEDK0IBIIEhVQE2oWq1nQi0oLQWpVAyqZpFCKBWmaSK51mx06jFgY0ytSuMrcrNlzXTTrnp0NI6atc9OhUrpq1z06NP06apWNOjVzpvTrnplPVzp0lOsSmU9aTp01azCrWkrSZ06D06hoA00ahoLULRaLSRabRrNo0kWtatZlWnpa3qEqMagUEWgEUtRaz0xjpjIZdV8+mVmrWbKOmnWJWtNrGtWsq0Ka06xp0qlvTrGnSGt6dc9OhU6dJWpXOUynrSdOkrUrnK1KqVpO29OsatVq503oZ1DT9G1nVrNpaV6NrOq0aWovS0DQWovTWnWVp6n03DrErR6XpoIjStGIjCTaKy2zRrPqvjWioohuGMwwNY0qFQrSWSSdaTJSnWjGSQ1qVqVjTDVK3KdYjUPVzprTrKPVemtWgDT9nWbSBpexoQo0r0hqRIvSOskFrUajEahlrSSVh4kUeFQsOEkV54DUJMaLJDSNIIKRGoqnWkDElpLJhE1CzGoD0tMwg9ahZJjSgtB+kKQBoBALQiAnUigDG4zzG5FxfKjSkKosFE8KhlpkmXTzI2zyYlHLSBCyWToVqqVBJrRZJJ1qFmNRI1qGCGAaSCD0oIDSggZCRhIIEkkAjAYcDfLcZjUXGsMKS4rUCgmisNdVjSZdV53LTErSWfNJCJetIIKaAJFSoFCRrcMZjUIa1GmYSGkhAygjBQQUUEeBJA8BQQwFrlhqGcdJWpXOVqVUVrpqZlOqPWhRotBWjqsVWs6Kxtee3K5tc1DPmtlkhppLJCtKBTSVUSJNajUc5WpSLXSFiNAa0ggelBAyglKOoIzIQMFDTADDrJBtRqVz06Y100656tMa6az10zrF6CeujazotYtJja+aIIIdJS5yt6TTmkhBetJkkWtJkpGkysaZSRrpKZWI0DaLOrQGkzq0z1paytVFStamdRnrSGEGcQWg0WdQLWtWs6tBa1q1nRejK09dM6zotDO02s2i1nyJFrmijKJrn6kFT6YUiapJJIxVIioMSJLpDfSQWIUglIIzKSUcTSQXykkZqpIBBIEqkgQZqRo6ZFSDOs1lIk1/9k=');
+    background-size: cover;
+    background-position: center;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: #00b3ff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Main Content ========== */
+.main-content {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Полупрозрачный фон */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ========== Support Hero Section ========== */
+.support-hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqnXLrhZHBZvH5IgIW1fBavQTjuZPG4zy73w&s');
+    /* Фон для секции hero */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.support-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.support-hero input {
+    padding: 10px;
+    width: 50%;
+    max-width: 600px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b3553;
+    color: white;
+}
+
+/* ========== Help Topics ========== */
+/* ========== Help Topics ========== */
+/* ========== Help Topics ========== */
+.help-topics {
+    display: grid;
+    /* Используем grid для создания сетки */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 колонки в строке */
+    gap: 30px;
+    /* Расстояние между блоками */
+    padding: 50px 20px;
+}
+
+.help-item {
+    padding: 30px 20px 20px;
+    /* Уменьшаем нижний паддинг */
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Выравниваем содержимое по низу */
+    height: 200px;
+    /* Уменьшена высота блока */
+}
+
+.help-item h2 {
+    font-size: 26px;
+    /* Увеличим размер заголовка */
+    margin: 0 0 10px 0;
+}
+
+.help-item p {
+    font-size: 16px;
+    /* Уменьшили размер текста */
+    line-height: 1.6;
+    color: #ccc;
+    margin: 0;
+}
+
+/* ========== Фоны для каждого блока ========== */
+.item-1 {
+    background-image: url('https://cdn2.unrealengine.com/accounts-cat-tile-1278x734-85e853d693f0.jpg');
+    /* фон для первого блока */
+    background-size: cover;
+    background-position: center;
+}
+
+.item-2 {
+    background-image: url('https://cdn2.unrealengine.com/epic-games-store-cat-tile-1278x734-4d32a6191abd.jpg');
+    /* фон для второго блока */
+    background-size: cover;
+    background-position: center;
+}
+
+.item-3 {
+    background-image: url('https://cdn2.unrealengine.com/payments-cat-tile-1278x734-4c8460f73be2.jpg');
+    /* фон для третьего блока */
+    background-size: cover;
+    background-position: center;
+}
+
+.item-4 {
+    background-image: url('https://cdn2.unrealengine.com/creator-programs-cat-tile-1278x734-255e130d8319.jpg');
+    /* фон для четвертого блока */
+    background-size: cover;
+    background-position: center;
+}
+
+.item-5 {
+    background-image: url('https://cdn2.unrealengine.com/technical-support-cat-tile-1278x734-627dd90d339e.jpg');
+    /* фон для пятого блока */
+    background-size: cover;
+    background-position: center;
+}
+
+.item-6 {
+    background-image: url('https://cdn2.unrealengine.com/parent-and-guardian-support-cat-tile-1278x734-0498b910e0ab.jpg');
+    /* фон для шестого блока */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Адаптивность: на мобильных устройствах колонки будут по одному */
+@media (max-width: 768px) {
+    .help-topics {
+        grid-template-columns: 1fr;
+        /* Все элементы по одному в строке */
+    }
+}
+
+
+
+.help-item:hover {
+    transform: translateY(-10px);
+    /* Поднимем блок при наведении */
+}
+
+/* Адаптивность: на мобильных устройствах колонки будут по 1 */
+
+
+
+/* ========== FAQ Section ========== */
+.faq {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq ul {
+    list-style: none;
+    padding: 0;
+}
+
+.faq li {
+    margin: 10px 0;
+}
+
+.faq a {
+    color: #00b3ff;
+    text-decoration: none;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Footer ========== */
+.footer {
+    background-color: #121212;
+    padding: 40px;
+    font-size: 14px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-top h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00aaff;
+    transform: scale(1.2);
+}
+
+/* ========== Games Section ========== */
+.games-section {
+    padding: 50px 20px;
+    background-color: #121212;
+    color: white;
+}
+
+.games-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.games-container {
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 250px;
+    /* Фиксированная высота */
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    position: relative;
+    /* Убираем паддинг, так как изображения и текст будут сами по себе */
+}
+
+/* Изображение для каждого блока */
+.game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-card p {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    bottom: -30px;
+    /* Сдвигаем текст ниже блока */
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Уникальные фоны для каждого блока, вы сможете добавить свои картинки сюда */
+.game-card-1 {
+    background-image: url('https://cdn2.unrealengine.com/fn-tile-783x1047-98342819ff40.jpg');
+    /* Пустой фон для Fortnite, сюда добавьте свое изображение */
+}
+
+.game-card-2 {
+    background-image: url('https://cdn2.unrealengine.com/fn-lego-tile-783x1047-59511df2b356.png');
+    /* Пустой фон для LEGO Fortnite */
+}
+
+.game-card-3 {
+    background-image: url('https://cdn2.unrealengine.com/rl-tile-783x1047-372f1725f633.jpg');
+    /* Пустой фон для Rocket League */
+}
+
+.game-card-4 {
+    background-image: url('https://cdn2.unrealengine.com/fall-guys-tile-783x1047-f114529c7fe3.jpg');
+    /* Пустой фон для Fall Guys */
+}
+
+.game-card-5 {
+    background-image: url('https://cdn2.unrealengine.com/fn-festival-tile-783x1047-91b61632af65.jpg');
+    /* Пустой фон для Fortnite Festival */
+}
+
+.game-card-6 {
+    background-image: url('https://cdn2.unrealengine.com/rr-tile-783x1047-5622d87c5897.jpg');
+    /* Пустой фон для Rocket Racing */
+}
+
+/* Show all games button */
+.show-all {
+    display: inline-block;
+    background-color: #1a9fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.show-all:hover {
+    background-color: #0080b0;
+}
+
+/* Адаптивность: на мобильных устройствах будут по одному в строке */
+@media (max-width: 768px) {
+    .games-container {
+        grid-template-columns: 1fr;
+        /* Все карточки по одному в строке */
+    }
+}
