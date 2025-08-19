@@ -87,19 +87,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const gamesList = document.getElementById("games-list");
     function renderGames(filteredGames) {
         gamesList.innerHTML = "";
-        filteredGames.forEach(game => {
+        filteredGames.forEach((game) => {
             const newPrice = (game.price * (1 - game.discount / 100)).toFixed(2);
 
             const card = document.createElement("div");
             card.className = "game-card";
             card.innerHTML = `
-        <img src="${game.img}" alt="${game.name}" class="game-img">
-        <h3 class="game-name">${game.name}</h3>
-        <p class="old-price">$${game.price}</p>
-        <p class="discount">-${game.discount}%</p>
-        <p class="new-price">$${newPrice}</p>
-        <button class="buy-btn">Buy Now</button>
-      `;
+            <img src="${game.img}" alt="${game.name}" class="game-img">
+            <h3 class="game-name">${game.name}</h3>
+            <p class="old-price">$${game.price}</p>
+            <p class="discount">-${game.discount}%</p>
+            <p class="new-price">$${newPrice}</p>
+            <button class="buy-btn">Подробнее</button>
+        `;
+
+            // Навешиваем клик на всю карточку
+            card.addEventListener("click", () => {
+                localStorage.setItem("selectedGame", JSON.stringify(game));
+                window.location.href = "game.html";
+
+            });
+
             gamesList.appendChild(card);
         });
     }
@@ -146,3 +154,16 @@ if (currentUser) {
         window.location.href = "login.html"; // путь к твоей странице логина
     });
 }
+
+const cardGame = document.querySelector('.game-card')
+
+// dashboard.js
+document.querySelectorAll(".game-card").forEach((card, index) => {
+    card.addEventListener("click", () => {
+        // Берем уже существующие данные из массива games
+        const game = cardGame[index]; // games — твой существующий массив
+        localStorage.setItem("selectedGame", JSON.stringify(game));
+        window.location.href = "http://localhost:5500/project/game.html"; // переход на страницу деталей
+    });
+});
+
