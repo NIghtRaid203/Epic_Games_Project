@@ -1,0 +1,28 @@
+#cart-items {
+    flex-wrap: wrap;      /* чтобы карточки переносились на следующую строку */
+    gap: 30px;      
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-left: 100px;
+}
+h2 {
+    margin-left: 100px;
+}
+
+h1 {
+    margin-left: 100px;
+}
+
+button{
+  background: #0078f2;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #005bb5;
+}
